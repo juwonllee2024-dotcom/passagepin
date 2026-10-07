@@ -1,0 +1,16 @@
+{
+  "schema": "passagepin/v1",
+  "createdAt": "2026-10-07T01:00:00.000Z",
+  "page": {
+    "url": "https://example.test/brief"
+  },
+  "selection": {
+    "normalizedLength": 71,
+    "words": 12,
+    "sha256": "91ab3131950e1c33cc08eb6aaa898ec0ebf8cd23f2749368de6c1a812124bbbe"
+  },
+  "integrity": {
+    "algorithm": "SHA-256",
+    "seal": "f66c27fc125456e3e6d3c94b83b629c52f4faad0687ef35aec0c4bd5431fd174"
+  }
+}

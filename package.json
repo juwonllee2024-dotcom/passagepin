@@ -1,0 +1,28 @@
+{
+  "name": "passagepin",
+  "version": "0.1.0",
+  "description": "Pin a web passage locally and verify it later as EXACT, CHANGED, or MISSING.",
+  "license": "MIT",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "build": "node scripts/build.mjs",
+    "demo": "node scripts/serve.mjs",
+    "verify": "node dist/passagepin.mjs",
+    "audit": "npm audit --audit-level=high"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.270",
+    "@types/node": "^22.10.2",
+    "@typescript-eslint/eslint-plugin": "^8.18.0",
+    "@typescript-eslint/parser": "^8.18.0",
+    "esbuild": "^0.28.2",
+    "eslint": "^9.17.0",
+    "typescript": "^5.7.2",
+    "vite": "^8.3.2",
+    "vitest": "^5.0.3"
+  }
+}

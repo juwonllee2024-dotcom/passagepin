@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PassagePin demo</title>
+    <style>
+      :root { color-scheme: dark; font-family: system-ui, sans-serif; background: #0b1020; color: #e2e8f0; }
+      body { max-width: 760px; margin: 0 auto; padding: 48px 20px; }
+      main { padding: 30px; border: 1px solid #334155; border-radius: 22px; background: #111827; }
+      h1 { margin-top: 0; font-size: 42px; letter-spacing: -0.05em; color: #f8fafc; }
+      p { color: #cbd5e1; line-height: 1.6; }
+      article { margin: 24px 0; padding: 22px; border-radius: 14px; background: #0f172a; font-size: 20px; line-height: 1.7; }
+      label { display: block; margin-top: 16px; color: #cbd5e1; }
+      input[type=file], button { box-sizing: border-box; width: 100%; margin-top: 7px; padding: 12px; border-radius: 10px; border: 1px solid #475569; font: inherit; }
+      input[type=file] { background: #0f172a; color: #e2e8f0; }
+      button { border: 0; background: #a3e635; color: #1a2e05; font-weight: 800; cursor: pointer; }
+      button.secondary { background: #334155; color: #f8fafc; }
+      button:disabled { cursor: not-allowed; opacity: .55; }
+      .rule { margin: 24px 0; border: 0; border-top: 1px solid #334155; }
+      .note { padding: 12px 14px; border-left: 3px solid #a3e635; background: #172113; }
+      #selection-summary, #status { min-height: 24px; color: #bef264; font-weight: 700; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p>LOCAL DEMO · NO NETWORK · SELECTIVE PROOF</p>
+      <h1>Pin the sentence. Check it later.</h1>
+      <p>Select the sentence below, create a pin, edit the sentence in this file or use the controls to simulate a changed page, then select it again and verify.</p>
+      <article id="passage">A clear source should remain checkable after the browser tab is closed.</article>
+      <p id="selection-summary" aria-live="polite"></p>
+      <label><input id="include-quote" type="checkbox" /> Store quote text in file for local citation</label>
+      <button id="create-pin" disabled>Create local pin</button>
+      <hr class="rule" />
+      <label>Load a local pin<input id="pin-file" type="file" accept="application/json,.json" /></label>
+      <button id="verify-pin" class="secondary" disabled>Verify selected passage</button>
+      <p id="status" aria-live="polite"></p>
+      <p class="note">EXACT means normalized words match. It does not prove authorship, truth, or server receipt.</p>
+    </main>
+    <script src="/demo.js"></script>
+  </body>
+</html>

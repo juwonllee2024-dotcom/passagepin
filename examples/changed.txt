@@ -1,0 +1,1 @@
+A clear source should remain checkable after the browser window is closed.

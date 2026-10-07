@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "PassagePin",
+  "version": "0.1.0",
+  "description": "Pin one web passage locally and verify it later as EXACT, CHANGED, or MISSING.",
+  "permissions": ["activeTab", "scripting"],
+  "background": { "service_worker": "service-worker.js" },
+  "action": { "default_title": "Pin this passage" },
+  "minimum_chrome_version": "102"
+}
