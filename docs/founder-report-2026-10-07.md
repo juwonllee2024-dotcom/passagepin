@@ -14,4 +14,14 @@
 - **내일의 단 하나의 실험:** 10명에게 같은 문장의 원본·수정본을 pin/verify하게 하고 EXACT/CHANGED/MISSING 이해율을 측정한다.
 - **GitHub 공개 URL:** publication appendix에 기록.
 - **commit·CI·release 결과:** publication appendix에 기록.
+-
+## Publication appendix
+
+- **Public repository:** https://github.com/juwonllee2024-dotcom/passagepin
+- **Commit:** `f2669be6c199687628975f8ea6c74c29dfc82a34`
+- **CI:** [run 37557106923](https://github.com/juwonllee2024-dotcom/passagepin/actions/runs/37557106923) — success
+- **Release:** [v0.1.0](https://github.com/juwonllee2024-dotcom/passagepin/releases/tag/v0.1.0)
+- **Source archive:** `passagepin-v0.1.0-source.zip`, 51,390 bytes, SHA-256 `7eaa93853839e50b31e4cbb01cf6947a42986ceca3c66c6569009fbbde9bec99`, 0 downloads at verification time.
+- **Remote snapshot:** 0 stars, 0 forks, 0 watchers, 0 open issues, 0 open pull requests; traffic 0 views / 0 clones in the available 14-day window.
+- **Account snapshot:** 44 repositories after publication versus 43 before; aggregate stars 3, forks 0, watchers 1, open issues 0, open pull requests 1.
 - **막힌 이유:** live browser connector 부재. 재개 조건은 connector를 연결한 뒤 실제 Chrome toolbar selection flow를 실행하는 것이다.
